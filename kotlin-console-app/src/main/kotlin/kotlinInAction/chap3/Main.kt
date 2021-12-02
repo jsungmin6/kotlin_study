@@ -96,5 +96,20 @@ fun main(args: Array<String>) {
     sb.lastChar2 = '!'
     println(sb)
 
+    //가변 인자 함수
+    val lists = listOf("agrgs : ",*args)
+    println(lists)
+
+    //중위 호출
+    val maps = mapOf(1 to "one", 2 to "two",3 to "three")
+
+    //구조 분해 선언
+    val (number, name) = 1 to "one"
+
+
+    //정규식
+    println("12.345-6.A".split("\\.|-".toRegex()))
+
+
 
 }
